@@ -46,15 +46,15 @@ app.get('/', routes.index);
 
 //Required: Watson Conversation credentials
 var conversation = watson.conversation({
-  username:'<username>',//replace with username for Watson Conversation
-  password:'<password>',//replace with password for Watson Conversation
+  username:'info@techonomics.org',//replace with username for Watson Conversation
+  password:'O1penit!',//replace with password for Watson Conversation
   version: 'v1',
   version_date: '2016-07-11'
 });
 
 
 //Required: Watson Conversation Workspace ID
-var workspace = '<workspace_id>';
+var workspace = '1260e414-c19b-49ae-b593-3af932f5ad3b';
 
 
 app.post('/converse', function(req, res, next) {
